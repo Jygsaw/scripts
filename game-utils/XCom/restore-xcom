@@ -1,0 +1,9 @@
+#!/bin/bash
+source "$HOME/scripts/utils/colors"
+
+echo "${yellow}Restoring XCom: Started"
+
+cp "/Users/jcheung/Library/Application Support/Feral Interactive/XCOM Enemy Unknown/XEW/save300.bak" "/Users/jcheung/Library/Application Support/Feral Interactive/XCOM Enemy Unknown/XEW/SaveData/save300"
+
+echo "${green}Restoring XCom: Finished"
+echo "${reset}"
