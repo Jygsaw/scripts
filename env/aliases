@@ -1,0 +1,10 @@
+#!/bin/bash
+source "$HOME/scripts/utils/colors"
+
+# Git aliases
+alias branch="clear && git branch -vv && git status"
+alias cached="git diff --cached"
+alias rebase="git pull --rebase origin master"
+alias replay="git rebase -i head~10"
+alias review="clear && git log --oneline --reverse -10"
+alias uplink="git branch --set-upstream-to master"
