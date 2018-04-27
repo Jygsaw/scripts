@@ -1,0 +1,4 @@
+#!/bin/bash
+source "$HOME/scripts/utils/colors"
+
+echo "${yellow}Stashing ...${reset}"
