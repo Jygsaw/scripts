@@ -1,7 +1,6 @@
 #!/bin/bash
 source "$HOME/scripts/utils/colors"
-
-LIB_PATH="$HOME/scripts/game-utils/lib"
+source "$HOME/scripts/game-utils/config"
 
 if [ $1 ]; then
   if [ $1 == "stash" ]; then

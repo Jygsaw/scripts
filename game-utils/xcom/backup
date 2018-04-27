@@ -1,9 +1,9 @@
 #!/bin/bash
 source "$HOME/scripts/utils/colors"
+source "$HOME/scripts/game-utils/config"
 
-echo "${yellow}Backing up XCom: Started"
+echo "${yellow}Backing up XCom: Started${reset}"
 
-cp "/Users/jcheung/Library/Application Support/Feral Interactive/XCOM Enemy Unknown/XEW/SaveData/save300" "/Users/jcheung/Library/Application Support/Feral Interactive/XCOM Enemy Unknown/XEW/save300.bak"
+cp "/Users/jcheung/Library/Application Support/Feral Interactive/XCOM Enemy Unknown/XEW/SaveData/save300" "$STASH_PATH/save300.bak"
 
-echo "${green}Backing up XCom: Finished"
-echo "${reset}"
+echo "${green}Backing up XCom: Finished${reset}"
