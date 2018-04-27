@@ -1,0 +1,4 @@
+#!/bin/bash
+
+LIB_PATH="$HOME/scripts/game-utils/lib"
+STASH_PATH="$HOME/scripts/game-utils/stash"
