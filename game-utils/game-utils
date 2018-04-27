@@ -1,0 +1,18 @@
+#!/bin/bash
+source "$HOME/scripts/utils/colors"
+
+LIB_PATH="$HOME/scripts/game-utils/lib"
+
+if [ $1 ]; then
+  if [ $1 == "stash" ]; then
+    source "$LIB_PATH/game-stash"
+  elif [ $1 == "pop" ]; then
+    source "$LIB_PATH/game-pop"
+  elif [ $1 == "drop" ]; then
+    source "$LIB_PATH/game-drop"
+  else
+    echo "${red}Unknown option${reset}"
+  fi
+else
+  echo "${yellow}Please choose an option:${reset}"
+fi
