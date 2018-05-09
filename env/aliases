@@ -1,10 +1,16 @@
 #!/bin/bash
 source "$HOME/scripts/utils/colors"
 
-# Git aliases
+# Terminal aliases
 alias branch="clear && git branch -vv && git status"
 alias cached="git diff --cached"
 alias rebase="git pull --rebase origin master"
 alias replay="git rebase -i head~10"
 alias review="clear && git log --oneline --reverse -10"
 alias uplink="git branch --set-upstream-to master"
+
+# Git aliases
+git config --global alias.aliases "config --get-regexp '^alias\.'"
+git config --global alias.ignore "update-index --skip-worktree"
+git config --global alias.unignore "update-index --no-skip-worktree"
+git config --global alias.ignored "!git ls-files -v | grep '^S'"
