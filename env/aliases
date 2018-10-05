@@ -2,6 +2,7 @@
 source "$HOME/scripts/utils/colors"
 
 # Terminal aliases
+alias arcclean='git branch | grep '\''[^\*] arcpatch'\'' | xargs git branch -D'
 alias branch="clear && git branch -vv && git status"
 alias cached="git diff --cached"
 alias rebase="git pull --rebase origin master"
