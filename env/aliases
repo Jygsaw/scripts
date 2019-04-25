@@ -9,6 +9,7 @@ alias rebase="git pull --rebase origin master"
 alias replay="git rebase -i head~10"
 alias review="clear && git log --oneline --reverse -10"
 alias uplink="git branch --set-upstream-to master"
+alias downlink="git branch --unset-upstream"
 
 # Git aliases
 git config --global alias.aliases "config --get-regexp '^alias\.'"
