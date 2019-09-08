@@ -1,0 +1,11 @@
+#!/bin/bash
+source "$HOME/scripts/utils/colors"
+source "$HOME/scripts/game-utils/config"
+
+echo "${yellow}Backing up XCom: Started${reset}"
+
+for file in /Users/jcheung/Library/Application\ Support/Feral\ Interactive/XCOM\ 2\ WotC/VFS/Local/my\ games/XCOM2\ War\ of\ the\ Chosen/XComGame/SaveData/save_LEGACY\ OP*;
+  do cp "$file" "$STASH_PATH/";
+  done;
+
+echo "${green}Backing up XCom: Finished${reset}"
