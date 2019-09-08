@@ -14,4 +14,7 @@ if [ $1 ]; then
   fi
 else
   echo "${yellow}Please choose an option:${reset}"
+  echo "${yellow}  stash: create new backup${reset}"
+  echo "${yellow}  pop:   restore latest backup${reset}"
+  echo "${yellow}  drop:  drop last save${reset}"
 fi
