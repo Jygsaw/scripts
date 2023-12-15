@@ -1,14 +1,20 @@
 #!/bin/bash
 source "$HOME/scripts/utils/colors"
 
-# Terminal aliases
+# Shell PostgreSQL aliases
+alias db="psql -U postgres"
+alias dbstart="pg_ctl -D 'C:\Program Files\PostgreSQL\16\data' start"
+alias dbstop="pg_ctl -D 'C:\Program Files\PostgreSQL\16\data' stop"
+alias dbrestart="pg_ctl -D 'C:\Program Files\PostgreSQL\16\data' restart"
+
+# Shell Git aliases
 alias arcclean='git branch | grep '\''[^\*] arcpatch'\'' | xargs git branch -D'
 alias branch="git branch -vv && git status"
 alias cached="git diff --cached"
 alias rebase="git pull --rebase origin master"
 alias replay="git rebase -i head~10"
 alias review="git log --oneline --reverse -10"
-alias uplink="git branch --set-upstream-to master"
+alias uplink="git branch --set-upstream-to main"
 alias downlink="git branch --unset-upstream"
 
 # Git aliases
